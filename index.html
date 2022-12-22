@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My osam website</h1>
+    <article class="blogs">
+        <h3>My Osam Blog -1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure necessitatibus nulla, minus quia
+            commodi, omnis dolorum tempora quasi repudiandae ullam assumenda. Voluptate ab eos sit, asperiores et
+            laborum ad.</p>
+    </article>
+    <article class="blogs">
+        <h3 id="second-title">My Osam Blog -2</h3>
+        <p>Dolor, architecto. Repellendus officia est ad magni sapiente rerum. Enim repellendus nobis amet tenetur
+            consequuntur, mollitia consectetur facilis eveniet dicta laborum labore voluptates facere incidunt harum,
+            dolorum sunt aut distinctio.</p>
+    </article>
+    <article class="blogs">
+        <h3 id="third-title">My Osam Blog -3</h3>
+        <p>Aspernatur eum deserunt impedit repellat optio nobis. Consectetur fugit autem hic iure suscipit, natus,
+            dignissimos sint sunt ipsa eveniet incidunt error explicabo deleniti iste et qui? Modi porro quidem eveniet!
+        </p>
+    </article>
+    <script>
+        const tagname = document.getElementsByTagName('h3');
+        for (const h3 of tagname) {
+            //console.log(h3.innerText);
+        }
+        const thirdTitle = document.getElementById('third-title');
+        thirdTitle.style.backgroundColor = 'yellow';
+        thirdTitle.style.textAlign = 'center';
+        const blogs = document.getElementsByClassName('blogs');
+        for (const blog of blogs) {
+            blog.style.border = '3px solid orange';
+            blog.style.borderRadius = '10px ';
+            blog.style.margin = '10px';
+            blog.style.padding = '20px';
+        }
+
+    </script>
+
+</body>
+
+</html>
